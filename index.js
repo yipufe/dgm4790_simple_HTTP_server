@@ -15,7 +15,7 @@ const apiData = {
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(pageRoutes)
 app.get('/api', function(req, res, next) {
-    res.send(apiData)
+    res.json(apiData)
 })
 
 
